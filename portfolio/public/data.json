@@ -1,0 +1,86 @@
+{
+  "es": {
+    "profile": {
+      "name": "Lara Converso",
+      "title": "Java Developer en Globant | Estudiante de Ingeniería Informática (UBA)",
+      "summary": "Desarrolladora Backend especializada en Java, actualmente contribuyendo en sistemas críticos para un importante cliente global. Apasionada por la arquitectura de software y entornos de alta disponibilidad.",
+      "email": "laraconverso@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/laraconverso",
+      "github": "https://github.com/Laraconverso"
+    },
+    "experience": [
+      {
+        "company": "Globant",
+        "role": "Java Developer",
+        "period": "Octubre 2024 - Presente",
+        "description": "Como parte del ecosistema de Disney Parks, colaboro en la estabilidad y evolución de aplicaciones. Mi rol une el soporte técnico avanzado (Sustainment) y el desarrollo backend, optimizando arquitecturas de microservicios."
+      }
+    ],
+    "projects": [
+      {
+        "id": "uba",
+        "title": "Ingeniería Informática (UBA)",
+        "category": "Universidad de Buenos Aires",
+        "shortDesc": "Algoritmos, estructuras de datos y lógica compleja.",
+        "fullDesc": "Formación académica desde 2020 centrada en fundamentos sólidos de computación, sistemas operativos y arquitectura."
+      },
+      {
+        "id": "dh",
+        "title": "Certified Tech Developer",
+        "category": "Digital House",
+        "shortDesc": "Especialización en Backend y Desarrollo Web.",
+        "fullDesc": "Formación intensiva (2021-2024) cubriendo microservicios en Java, Spring Boot y metodologías ágiles."
+      }
+    ],
+    "skills": ["Java", "AWS", "SQL", "Scrum", "JavaScript"],
+    "sections": {
+      "exp": "Experiencia Profesional",
+      "proj": "Formación y Proyectos",
+      "skills": "Habilidades Técnicas",
+      "contact": "Contacto"
+    }
+  },
+  "en": {
+    "profile": {
+      "name": "Lara Converso",
+      "title": "Java Developer at Globant | Computer Engineering student at UBA",
+      "summary": "Backend Developer specializing in Java, currently contributing to critical systems for a major global client. Passionate about software architecture and high availability environments.",
+      "email": "laraconverso@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/laraconverso",
+      "github": "https://github.com/Laraconverso"
+    },
+    "experience": [
+      {
+        "company": "Globant",
+        "role": "Java Developer",
+        "period": "October 2024 - Present",
+        "description": "Part of the Disney Parks ecosystem, collaborating on user-facing applications. My role bridges advanced technical support (Sustainment) and backend development, optimizing microservices architectures."
+      }
+    ],
+    "projects": [
+      {
+        "id": "uba",
+        "title": "Computer Engineering (UBA)",
+        "category": "University of Buenos Aires",
+        "shortDesc": "Algorithms, data structures, and complex logic.",
+        "fullDesc": "Academic background since 2020 focused on computer science fundamentals, OS, and architecture.",
+        "link": "https://github.com/Laraconverso"
+      },
+      {
+        "id": "dh",
+        "title": "Certified Tech Developer",
+        "category": "Digital House",
+        "shortDesc": "Backend Specialist & Web Development.",
+        "fullDesc": "Intensive training (2021-2024) covering Java microservices, Spring Boot, and agile methodologies.",
+        "link": "https://github.com/Laraconverso"
+      }
+    ],
+    "skills": ["Java", "AWS", "SQL", "Scrum", "JavaScript"],
+    "sections": {
+      "exp": "Professional Experience",
+      "proj": "Education & Projects",
+      "skills": "Technical Skills",
+      "contact": "Contact"
+    }
+  }
+}
