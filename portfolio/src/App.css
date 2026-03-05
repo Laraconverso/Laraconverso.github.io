@@ -1,0 +1,115 @@
+/* Importamos una tipografía Monospace moderna de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
+
+:root {
+  --text-primary: #f8fafc;
+  --text-secondary: #c026d3; /* Fucsia / Violeta Neón */
+  --card-bg: rgba(15, 23, 42, 0.4);
+  --border-color: rgba(192, 38, 211, 0.4);
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+body {
+  font-family: var(--font-mono); 
+  color: var(--text-primary);
+  background-color: #080b14;
+}
+
+.app-wrapper {
+  position: relative;
+  z-index: 10;
+  display: flex; flex-direction: column; align-items: center;
+  width: 100%; min-height: 100vh; 
+  font-size: 1.1rem; /* Base más pequeña para evitar el efecto "muro de texto" */
+}
+
+.container { 
+  max-width: 1000px; 
+  width: 100%; 
+  padding: 60px 20px; 
+  box-sizing: border-box; 
+}
+
+/* --- HERO SECTION (JERARQUÍA VISUAL CORREGIDA) --- */
+.hero { 
+  text-align: center; 
+  margin-bottom: 80px; 
+  margin-top: 5vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Da aire entre nombre, subtítulo y texto */
+}
+
+.hero h1 { 
+  font-size: 4rem; /* Fijado a 4rem */
+  font-weight: 800; 
+  color: #fff; 
+  text-shadow: 0 0 25px rgba(192, 38, 211, 0.6); 
+  margin: 0 0 30px 0;; 
+  letter-spacing: -1px; 
+}
+
+.subtitle { 
+  font-size: 1.3rem; /* Más sutil para no competir con tu nombre */
+  color: var(--text-secondary); 
+  margin: 0; 
+  font-weight: 700; 
+  letter-spacing: 0.5px;
+}
+
+.summary { 
+  font-size: 1.1rem; 
+  line-height: 1.9; /* Mucho más aire entre las líneas */
+  max-width: 650px; /* Acortamos el ancho para que la vista no se canse al leer */
+  margin: 10px auto 0; 
+  color: #cbd5e1; 
+  font-weight: 400;
+}
+
+.section-title { 
+  font-size: 2.2rem; 
+  border-bottom: 2px solid var(--text-secondary); 
+  display: inline-block; 
+  margin-bottom: 25px; 
+}
+
+/* --- TARJETAS VIDRIO --- */
+.card {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px); 
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  padding: 40px; 
+  border-radius: 20px; 
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card h3 { font-size: 1.7rem; margin: 0 0 10px 0; }
+.date-tag, .category-tag { color: var(--text-secondary); font-weight: bold; font-size: 1.1rem; margin: 0 0 15px 0; display: block; }
+.description-text { line-height: 1.7; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+.git-link { color: #38bdf8; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
+.git-link:hover { text-decoration: underline; }
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.navbar {
+  width: 100%; display: flex; justify-content: center; padding: 20px;
+  position: sticky; top: 0; z-index: 100; background: rgba(8, 11, 20, 0.8); backdrop-filter: blur(10px);
+}
+.nav-container { width: 100%; max-width: 1000px; display: flex; justify-content: flex-end; }
+.lang-select { padding: 10px 15px; font-size: 1.1rem; border-radius: 8px; background: transparent; color: #fff; border: 1px solid var(--text-secondary); font-family: inherit; cursor: pointer; }
+.lang-select option { background: #080b14; }
+
+.cursor { animation: blink 1s infinite; color: var(--text-secondary); }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* 📱 OPTIMIZACIÓN MOBILE */
+@media (max-width: 768px) { 
+  .hero h1 { font-size: 2.8rem; } 
+  .subtitle { font-size: 1.1rem; }
+  .summary { font-size: 1rem; padding: 0 10px; }
+  .grid { grid-template-columns: 1fr; } 
+}
